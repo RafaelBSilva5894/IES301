@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem alfabética</title>
+</head>
+<body>
+    <button id="myBtn">Visualizar em ordem alfabética</button>
+    <p id="demo">
+    <p> Daniela, Carlos, Barbara, Ana, Eduardo, Yasmim,
+        Otávio, Isabelly, Valentina, Lívia, Gabriel, Pedro, Felipe, Zion,
+        Heitor, Ubiratã, Xênia, Raul, Karina, Thiago, Natália, Washington, Quezia, João, Sarah,
+        Maria</p>
+    </p>
+
+    <script>
+        const element = document.getElementById("myBtn");
+        element.addEventListener("click", myFunction);
+
+        function myFunction() {
+            let nomes = ['Daniela', 'Carlos', 'Barbara', 'Ana', 'Eduardo', 'Yasmim',
+                'Otávio', 'Isabelly', 'Valentina', 'Lívia ', 'Gabriel', 'Pedro', 'Felipe', 'Zion',
+                'Heitor', 'Ubiratã', 'Xênia', 'Raul', 'Karina', 'Thiago', 'Natália', 'Washington', 'Quezia', 'João', 'Sarah', 'Maria'];
+
+            nomes.sort();
+
+            for (let i = 0; i < nomes.length; i++) {
+                document.write(nomes[i] + '<br>');
+            }
+        }
+    </script>
+
+</body>
+</html>
